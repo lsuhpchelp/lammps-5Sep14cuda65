@@ -1,0 +1,6 @@
+# Settings that the LAMMPS build will import when this package library is used
+
+user-awpmd_SYSINC =
+#user-awpmd_SYSLIB = -lblas -llapack
+user-awpmd_SYSLIB = -I/usr/local/compilers/Intel/cluster_studio_xe_2013.1.046/composer_xe_2013_sp1.2.144/mkl/include -mkl=sequential
+user-awpmd_SYSPATH =

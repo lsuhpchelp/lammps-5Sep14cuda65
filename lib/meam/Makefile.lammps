@@ -1,0 +1,9 @@
+# Settings that the LAMMPS build will import when this package library is used
+
+#meam_SYSINC =
+#meam_SYSLIB = -lifcore -lsvml -lompstub -limf
+#meam_SYSPATH = -L/opt/intel/fce/10.0.023/lib
+
+meam_SYSINC =
+meam_SYSLIB = -lifcore -lsvml -liompstubs5 -limf
+meam_SYSPATH = -L/usr/local/compilers/Intel/cluster_studio_xe_2013.1.046/composer_xe_2013_sp1.2.144/compiler/lib/intel64

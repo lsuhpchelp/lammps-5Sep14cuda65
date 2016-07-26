@@ -1,0 +1,7 @@
+# Settings that the LAMMPS build will import when this package library is used
+
+MKLROOT = /usr/local/compilers/Intel/cluster_studio_xe_2013.1.046/composer_xe_2013_sp1.2.144/mkl
+user-atc_SYSINC =
+#user-atc_SYSLIB = -lblas -llapack
+user-atc_SYSLIB = -I$(MKLROOT)/include -mkl=sequential -L$(MKLROOT)/lib/lib64 -lmkl_intel_ilp64 -lmkl_core -lmkl_sequential -lpthread -lm
+user-atc_SYSPATH =

@@ -1,0 +1,10 @@
+# Settings for libraries used by specific LAMMPS packages
+# this file is auto-edited when those packages are included/excluded
+
+PKG_INC =   -I../../lib/cuda -DLMP_USER_CUDA -DLMP_KOKKOS -DLMP_USER_OMP -DLMP_USER_INTEL -I../../lib/colvars -I../../lib/awpmd/ivutils/include -I../../lib/awpmd/systems/interact -I../../lib/atc -I../../src -I../../lib/reax -I../../lib/poems -DLMP_MPIIO -I../../lib/meam -I../../src 
+PKG_PATH =  -L../../lib/cuda -L../../lib/colvars$(LIBOBJDIR) -L../../lib/awpmd -L../../lib/atc -L../../lib/reax -L../../lib/poems -L../../lib/meam -L../../lib/gpu 
+PKG_LIB =   -llammpscuda -lkokkoscore -lcolvars -lawpmd -latc -lreax -lpoems -lmeam -lgpu 
+
+PKG_SYSINC =  $(user-cuda_SYSINC) $(KOKKOS_INC) $(molfile_SYSINC) $(colvars_SYSINC) $(user-atc_SYSINC) $(reax_SYSINC) $(meam_SYSINC) $(gpu_SYSINC) 
+PKG_SYSLIB =  $(user-cuda_SYSLIB) $(KOKKOS_LINK) $(molfile_SYSLIB) $(colvars_SYSLIB) $(user-awpmd_SYSLIB) $(user-atc_SYSLIB) $(reax_SYSLIB) $(meam_SYSLIB) $(gpu_SYSLIB) 
+PKG_SYSPATH = $(user-cuda_SYSPATH) $(molfile_SYSPATH) $(colvars_SYSPATH) $(user-awpmd_SYSPATH) $(user-atc_SYSPATH) $(reax_SYSPATH) $(meam_SYSPATH) $(gpu_SYSPATH) 

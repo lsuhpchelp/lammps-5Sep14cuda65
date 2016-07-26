@@ -1,0 +1,634 @@
+g++     cuda.cpp   -o cuda
+In file included from cuda.cpp:27:
+cuda.h:28:25: error: cuda_shared.h: No such file or directory
+In file included from cuda.h:29,
+                 from cuda.cpp:27:
+cuda_data.h:31:29: error: cuda_wrapper_cu.h: No such file or directory
+cuda_data.h:32:26: error: cuda_data_cu.h: No such file or directory
+In file included from cuda.cpp:27:
+cuda.h:30:28: error: cuda_precision.h: No such file or directory
+cuda.cpp:45:26: error: cuda_pair_cu.h: No such file or directory
+cuda.cpp:46:21: error: cuda_cu.h: No such file or directory
+In file included from cuda.h:29,
+                 from cuda.cpp:27:
+cuda_data.h:44: error: ISO C++ forbids declaration of ‘dev_array’ with no type
+cuda_data.h:44: error: expected ‘;’ before ‘*’ token
+cuda_data.h:54: error: ‘dev_array’ has not been declared
+In file included from cuda.h:29,
+                 from cuda.cpp:27:
+cuda_data.h:59: error: ‘dev_array’ has not been declared
+cuda_data.h: In member function ‘void* cCudaData<host_type, dev_type, mode>::dev_data()’:
+cuda_data.h:57: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::set_dev_data(void*)’:
+cuda_data.h:58: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::set_dev_array(int*)’:
+cuda_data.h:59: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘unsigned int* cCudaData<host_type, dev_type, mode>::get_dim()’:
+cuda_data.h:63: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘int cCudaData<host_type, dev_type, mode>::dev_size()’:
+cuda_data.h:76: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: At global scope:
+cuda_data.h:85: error: ‘dev_array’ has not been declared
+cuda_data.h: In constructor ‘cCudaData<host_type, dev_type, mode>::cCudaData(host_type*, int*, unsigned int, unsigned int, unsigned int, bool)’:
+cuda_data.h:98: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:99: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:100: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:105: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:106: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:107: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:112: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:113: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:114: error: request for member ‘dim’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:121: error: request for member ‘dev_data’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:125: error: request for member ‘dev_data’ in ‘dev_data_array->’, which is of non-class type ‘int’
+cuda_data.h:125: error: there are no arguments to ‘CudaWrapper_AllocCudaData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AllocCudaData’ must be available
+cuda_data.h:125: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+cuda_data.h:132: error: there are no arguments to ‘CudaWrapper_AllocPinnedHostData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AllocPinnedHostData’ must be available
+cuda_data.h: In constructor ‘cCudaData<host_type, dev_type, mode>::cCudaData(host_type*, unsigned int, unsigned int, unsigned int, bool)’:
+cuda_data.h:142: error: expected type-specifier before ‘dev_array’
+cuda_data.h:142: error: expected ‘;’ before ‘dev_array’
+cuda_data.h:152: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:159: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:166: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:175: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:179: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:179: error: there are no arguments to ‘CudaWrapper_AllocCudaData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AllocCudaData’ must be available
+cuda_data.h:186: error: there are no arguments to ‘CudaWrapper_AllocPinnedHostData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AllocPinnedHostData’ must be available
+cuda_data.h: In destructor ‘cCudaData<host_type, dev_type, mode>::~cCudaData()’:
+cuda_data.h:201: error: there are no arguments to ‘CudaWrapper_FreePinnedHostData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_FreePinnedHostData’ must be available
+cuda_data.h:204: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:205: error: there are no arguments to ‘CudaWrapper_FreeCudaData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_FreeCudaData’ must be available
+cuda_data.h:206: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::upload(bool)’:
+cuda_data.h:229: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:230: error: there are no arguments to ‘CudaData_Upload_DoubleDouble’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_DoubleDouble’ must be available
+cuda_data.h:237: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:238: error: there are no arguments to ‘CudaData_Upload_DoubleFloat’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_DoubleFloat’ must be available
+cuda_data.h:248: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:249: error: there are no arguments to ‘CudaData_Upload_FloatDouble’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_FloatDouble’ must be available
+cuda_data.h:256: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:257: error: there are no arguments to ‘CudaData_Upload_FloatFloat’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_FloatFloat’ must be available
+cuda_data.h:267: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:268: error: there are no arguments to ‘CudaData_Upload_IntInt’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_IntInt’ must be available
+cuda_data.h:280: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:284: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:285: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:286: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:288: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:289: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:297: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:301: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:302: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:303: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:305: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:306: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:314: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:315: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:323: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:325: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:326: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:333: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:334: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:342: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:344: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:345: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:351: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:352: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:361: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:363: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:364: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:371: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:372: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:381: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:383: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:384: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::uploadAsync(int, bool)’:
+cuda_data.h:407: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:408: error: there are no arguments to ‘CudaData_Upload_DoubleDouble’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_DoubleDouble’ must be available
+cuda_data.h:415: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:416: error: there are no arguments to ‘CudaData_Upload_DoubleFloat’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_DoubleFloat’ must be available
+cuda_data.h:426: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:427: error: there are no arguments to ‘CudaData_Upload_FloatDouble’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_FloatDouble’ must be available
+cuda_data.h:434: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:435: error: there are no arguments to ‘CudaData_Upload_FloatFloat’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_FloatFloat’ must be available
+cuda_data.h:445: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:446: error: there are no arguments to ‘CudaData_Upload_IntInt’ that depend on a template parameter, so a declaration of ‘CudaData_Upload_IntInt’ must be available
+cuda_data.h:458: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:462: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:463: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:464: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:466: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:467: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:475: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:479: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:480: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:481: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:483: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:484: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:492: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:493: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:501: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:503: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:504: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:511: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:512: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:520: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:522: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:523: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:529: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:530: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:539: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:541: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:542: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:549: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:550: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:559: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:561: error: there are no arguments to ‘CudaWrapper_AddCPUBufUploadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufUploadTime’ must be available
+cuda_data.h:562: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::download(bool)’:
+cuda_data.h:583: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:586: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:588: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:590: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:592: error: there are no arguments to ‘CudaWrapper_AddCPUBufDownloadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufDownloadTime’ must be available
+cuda_data.h:600: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:603: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:605: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:607: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:609: error: there are no arguments to ‘CudaWrapper_AddCPUBufDownloadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufDownloadTime’ must be available
+cuda_data.h:616: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:618: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:627: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:629: error: there are no arguments to ‘CudaWrapper_AddCPUBufDownloadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufDownloadTime’ must be available
+cuda_data.h:635: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:637: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:646: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:648: error: there are no arguments to ‘CudaWrapper_AddCPUBufDownloadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufDownloadTime’ must be available
+cuda_data.h:654: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:656: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:666: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:668: error: there are no arguments to ‘CudaWrapper_AddCPUBufDownloadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufDownloadTime’ must be available
+cuda_data.h:674: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:676: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:686: error: there are no arguments to ‘my_gettime’ that depend on a template parameter, so a declaration of ‘my_gettime’ must be available
+cuda_data.h:688: error: there are no arguments to ‘CudaWrapper_AddCPUBufDownloadTime’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AddCPUBufDownloadTime’ must be available
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::downloadAsync(int)’:
+cuda_data.h:708: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:709: error: there are no arguments to ‘CudaWrapper_SyncStream’ that depend on a template parameter, so a declaration of ‘CudaWrapper_SyncStream’ must be available
+cuda_data.h:713: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:714: error: there are no arguments to ‘CudaWrapper_SyncStream’ that depend on a template parameter, so a declaration of ‘CudaWrapper_SyncStream’ must be available
+cuda_data.h:724: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:725: error: there are no arguments to ‘CudaWrapper_SyncStream’ that depend on a template parameter, so a declaration of ‘CudaWrapper_SyncStream’ must be available
+cuda_data.h:729: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:730: error: there are no arguments to ‘CudaWrapper_SyncStream’ that depend on a template parameter, so a declaration of ‘CudaWrapper_SyncStream’ must be available
+cuda_data.h:738: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:739: error: there are no arguments to ‘CudaWrapper_SyncStream’ that depend on a template parameter, so a declaration of ‘CudaWrapper_SyncStream’ must be available
+cuda_data.h:753: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:754: error: there are no arguments to ‘CudaWrapper_SyncStream’ that depend on a template parameter, so a declaration of ‘CudaWrapper_SyncStream’ must be available
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::memset_device(int)’:
+cuda_data.h:773: error: ‘dev_data_array’ was not declared in this scope
+cuda_data.h:773: error: there are no arguments to ‘CudaWrapper_Memset’ that depend on a template parameter, so a declaration of ‘CudaWrapper_Memset’ must be available
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::set_buffer(void**, int*, bool)’:
+cuda_data.h:788: error: there are no arguments to ‘CudaWrapper_FreeCudaData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_FreeCudaData’ must be available
+cuda_data.h:790: error: there are no arguments to ‘CudaWrapper_AllocCudaData’ that depend on a template parameter, so a declaration of ‘CudaWrapper_AllocCudaData’ must be available
+In file included from cuda.cpp:27:
+cuda.h: At global scope:
+cuda.h:100: error: ‘cuda_shared_data’ does not name a type
+cuda.h:102: error: ‘F_FLOAT’ was not declared in this scope
+cuda.h:102: error: template argument 2 is invalid
+cuda.h:103: error: ‘F_FLOAT’ was not declared in this scope
+cuda.h:103: error: template argument 2 is invalid
+cuda.h:104: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:104: error: template argument 2 is invalid
+cuda.h:105: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:105: error: template argument 2 is invalid
+cuda.h:106: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:106: error: template argument 2 is invalid
+cuda.h:107: error: ‘X_FLOAT’ was not declared in this scope
+cuda.h:107: error: template argument 2 is invalid
+cuda.h:108: error: ‘X_FLOAT’ was not declared in this scope
+cuda.h:108: error: template argument 2 is invalid
+cuda.h:113: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.h:113: error: template argument 2 is invalid
+cuda.h:114: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.h:114: error: template argument 2 is invalid
+cuda.h:115: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.h:115: error: template argument 2 is invalid
+cuda.h:116: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.h:116: error: template argument 2 is invalid
+cuda.h:117: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.h:117: error: template argument 2 is invalid
+cuda.h:124: error: ‘X_FLOAT’ was not declared in this scope
+cuda.h:124: error: template argument 2 is invalid
+cuda.h:125: error: ‘F_FLOAT’ was not declared in this scope
+cuda.h:125: error: template argument 2 is invalid
+cuda.h:126: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:126: error: template argument 2 is invalid
+cuda.h:127: error: ‘F_FLOAT’ was not declared in this scope
+cuda.h:127: error: template argument 2 is invalid
+cuda.h:133: error: ‘X_FLOAT’ was not declared in this scope
+cuda.h:133: error: ‘X_FLOAT’ was not declared in this scope
+cuda.h:133: error: template argument 1 is invalid
+cuda.h:133: error: template argument 2 is invalid
+cuda.h:134: error: ISO C++ forbids declaration of ‘X_FLOAT’ with no type
+cuda.h:134: error: expected ‘;’ before ‘*’ token
+cuda.h:136: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:136: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:136: error: template argument 1 is invalid
+cuda.h:136: error: template argument 2 is invalid
+cuda.h:137: error: ISO C++ forbids declaration of ‘V_FLOAT’ with no type
+cuda.h:137: error: expected ‘;’ before ‘*’ token
+cuda.h:139: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:139: error: ‘V_FLOAT’ was not declared in this scope
+cuda.h:139: error: template argument 1 is invalid
+cuda.h:139: error: template argument 2 is invalid
+cuda.h:140: error: ISO C++ forbids declaration of ‘V_FLOAT’ with no type
+cuda.h:140: error: expected ‘;’ before ‘*’ token
+cuda.h: In member function ‘void LAMMPS_NS::Cuda::set_neighinit(int, double)’:
+cuda.h:68: error: ‘shared_data’ was not declared in this scope
+cuda.h: In member function ‘void LAMMPS_NS::Cuda::cu_x_download()’:
+cuda.h:80: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+In file included from cuda.cpp:40:
+cuda_neigh_list.h: At global scope:
+cuda_neigh_list.h:52: error: ‘cuda_shared_neighlist’ does not name a type
+cuda.cpp: In constructor ‘LAMMPS_NS::Cuda::Cuda(LAMMPS_NS::LAMMPS*)’:
+cuda.cpp:60: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:63: error: ‘Cuda_Cuda_GetCompileSettings’ was not declared in this scope
+cuda.cpp:65: error: ‘CUDA_FLOAT’ was not declared in this scope
+cuda.cpp:67: error: ‘X_FLOAT’ was not declared in this scope
+cuda.cpp:69: error: ‘V_FLOAT’ was not declared in this scope
+cuda.cpp:71: error: ‘F_FLOAT’ was not declared in this scope
+cuda.cpp:73: error: ‘PPPM_FLOAT’ was not declared in this scope
+cuda.cpp:75: error: ‘FFT_FLOAT’ was not declared in this scope
+cuda.cpp:87: error: ‘CUDA_ARCH’ was not declared in this scope
+cuda.cpp:114: error: ‘x_type’ was not declared in this scope
+cuda.cpp:116: error: ‘v_radius’ was not declared in this scope
+cuda.cpp:118: error: ‘omega_rmass’ was not declared in this scope
+cuda.cpp: In destructor ‘virtual LAMMPS_NS::Cuda::~Cuda()’:
+cuda.cpp:185: error: ‘x_type’ was not declared in this scope
+cuda.cpp:187: error: ‘v_radius’ was not declared in this scope
+cuda.cpp:189: error: ‘omega_rmass’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::accelerator(int, char**)’:
+cuda.cpp:262: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:277: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:281: error: ‘CudaWrapper_Init’ was not declared in this scope
+cuda.cpp:283: error: ‘CudaWrapper_AddStreams’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::setSharedDataZero()’:
+cuda.cpp:322: error: ‘shared_data’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::allocate()’:
+cuda.cpp:368: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.cpp:368: error: template argument 2 is invalid
+cuda.cpp:368: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:368: error: new initializer expression list treated as compound expression
+cuda.cpp:369: error: ‘ENERGY_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:369: error: template argument 2 is invalid
+cuda.cpp:369: error: new initializer expression list treated as compound expression
+cuda.cpp:370: error: ‘ENERGY_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:370: error: template argument 2 is invalid
+cuda.cpp:370: error: new initializer expression list treated as compound expression
+cuda.cpp:372: error: ‘CudaWrapper_AllocCudaData’ was not declared in this scope
+cuda.cpp:373: error: ‘CUDA_MAX_DEBUG_SIZE’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::setSystemParams()’:
+cuda.cpp:387: error: ‘shared_data’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::setDomainParams()’:
+cuda.cpp:399: error: ‘cuda_shared_domain’ was not declared in this scope
+cuda.cpp:399: error: ‘cu_domain’ was not declared in this scope
+cuda.cpp:399: error: ‘shared_data’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::checkResize()’:
+cuda.cpp:440: error: ‘cuda_shared_atom’ was not declared in this scope
+cuda.cpp:440: error: ‘cu_atom’ was not declared in this scope
+cuda.cpp:440: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:441: error: ‘cuda_shared_pair’ was not declared in this scope
+cuda.cpp:441: error: ‘cu_pair’ was not declared in this scope
+cuda.cpp:451: error: ‘X_FLOAT’ was not declared in this scope
+cuda.cpp:451: error: template argument 2 is invalid
+cuda.cpp:451: error: new initializer expression list treated as compound expression
+cuda.cpp:453: error: ‘V_FLOAT’ was not declared in this scope
+cuda.cpp:453: error: template argument 2 is invalid
+cuda.cpp:453: error: new initializer expression list treated as compound expression
+cuda.cpp:455: error: ‘F_FLOAT’ was not declared in this scope
+cuda.cpp:455: error: template argument 2 is invalid
+cuda.cpp:455: error: new initializer expression list treated as compound expression
+cuda.cpp:467: error: ‘V_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:467: error: template argument 2 is invalid
+cuda.cpp:467: error: new initializer expression list treated as compound expression
+cuda.cpp:472: error: ‘F_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:472: error: template argument 2 is invalid
+cuda.cpp:472: error: new initializer expression list treated as compound expression
+cuda.cpp:477: error: ‘X_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:477: error: template argument 2 is invalid
+cuda.cpp:477: error: new initializer expression list treated as compound expression
+cuda.cpp:479: error: ‘V_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:479: error: ‘V_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:479: error: template argument 1 is invalid
+cuda.cpp:479: error: template argument 2 is invalid
+cuda.cpp:479: error: ‘v_radius’ was not declared in this scope
+cuda.cpp:479: error: new initializer expression list treated as compound expression
+cuda.cpp:481: error: ‘V_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:481: error: ‘V_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:481: error: template argument 1 is invalid
+cuda.cpp:481: error: template argument 2 is invalid
+cuda.cpp:481: error: ‘omega_rmass’ was not declared in this scope
+cuda.cpp:481: error: new initializer expression list treated as compound expression
+cuda.cpp:486: error: ‘V_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:486: error: template argument 2 is invalid
+cuda.cpp:486: error: new initializer expression list treated as compound expression
+cuda.cpp:491: error: ‘F_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:491: error: template argument 2 is invalid
+cuda.cpp:491: error: new initializer expression list treated as compound expression
+cuda.cpp:517: error: ‘X_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:517: error: ‘X_FLOAT’ cannot appear in a constant-expression
+cuda.cpp:517: error: template argument 1 is invalid
+cuda.cpp:517: error: template argument 2 is invalid
+cuda.cpp:517: error: ‘x_type’ was not declared in this scope
+cuda.cpp:517: error: new initializer expression list treated as compound expression
+cuda.cpp:520: error: request for member ‘get_dim’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_xhold’, which is of non-class type ‘int’
+cuda.cpp:522: error: ‘X_FLOAT’ was not declared in this scope
+cuda.cpp:522: error: template argument 2 is invalid
+cuda.cpp:522: error: new initializer expression list treated as compound expression
+cuda.cpp:527: error: ‘V_FLOAT’ was not declared in this scope
+cuda.cpp:527: error: template argument 2 is invalid
+cuda.cpp:527: error: new initializer expression list treated as compound expression
+cuda.cpp:543: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:543: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:545: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_v’, which is of non-class type ‘int’
+cuda.cpp:545: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_v’, which is of non-class type ‘int’
+cuda.cpp:547: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_f’, which is of non-class type ‘int’
+cuda.cpp:547: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_f’, which is of non-class type ‘int’
+cuda.cpp:558: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_xhold’, which is of non-class type ‘int’
+cuda.cpp:558: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_xhold’, which is of non-class type ‘int’
+cuda.cpp:561: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_rmass’, which is of non-class type ‘int’
+cuda.cpp:561: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_rmass’, which is of non-class type ‘int’
+cuda.cpp:564: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_q’, which is of non-class type ‘int’
+cuda.cpp:564: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_q’, which is of non-class type ‘int’
+cuda.cpp:567: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_radius’, which is of non-class type ‘int’
+cuda.cpp:567: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_radius’, which is of non-class type ‘int’
+cuda.cpp:570: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_omega’, which is of non-class type ‘int’
+cuda.cpp:570: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_omega’, which is of non-class type ‘int’
+cuda.cpp:573: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_torque’, which is of non-class type ‘int’
+cuda.cpp:573: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_torque’, which is of non-class type ‘int’
+cuda.cpp:589: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_virial’, which is of non-class type ‘int’
+cuda.cpp:589: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_virial’, which is of non-class type ‘int’
+cuda.cpp:592: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eng_vdwl’, which is of non-class type ‘int’
+cuda.cpp:592: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eng_vdwl’, which is of non-class type ‘int’
+cuda.cpp:595: error: request for member ‘get_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eng_coul’, which is of non-class type ‘int’
+cuda.cpp:595: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eng_coul’, which is of non-class type ‘int’
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::evsetup_eatom_vatom(int, int)’:
+cuda.cpp:605: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.cpp:605: error: template argument 2 is invalid
+cuda.cpp:605: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:605: error: new initializer expression list treated as compound expression
+cuda.cpp:607: error: request for member ‘get_dim’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:610: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:613: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:614: error: request for member ‘memset_device’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:619: error: ‘ENERGY_FLOAT’ was not declared in this scope
+cuda.cpp:619: error: template argument 2 is invalid
+cuda.cpp:619: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:619: error: new initializer expression list treated as compound expression
+cuda.cpp:621: error: request for member ‘get_dim’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp:624: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:627: error: request for member ‘set_host_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp:628: error: request for member ‘memset_device’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::uploadAll()’:
+cuda.cpp:635: error: ‘my_times’ was not declared in this scope
+cuda.cpp:635: error: expected ‘;’ before ‘starttime’
+cuda.cpp:636: error: expected ‘;’ before ‘endtime’
+cuda.cpp:638: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:640: error: ‘starttime’ was not declared in this scope
+cuda.cpp:640: error: ‘my_gettime’ was not declared in this scope
+cuda.cpp:641: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:642: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_v’, which is of non-class type ‘int’
+cuda.cpp:643: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_f’, which is of non-class type ‘int’
+cuda.cpp:649: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:649: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_q’, which is of non-class type ‘int’
+cuda.cpp:651: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_rmass’, which is of non-class type ‘int’
+cuda.cpp:653: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_radius’, which is of non-class type ‘int’
+cuda.cpp:655: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_omega’, which is of non-class type ‘int’
+cuda.cpp:657: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_torque’, which is of non-class type ‘int’
+cuda.cpp:665: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:667: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp:669: error: ‘endtime’ was not declared in this scope
+cuda.cpp:671: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:671: error: ‘Cuda_PreBinning’ was not declared in this scope
+cuda.cpp:671: error: expected primary-expression before ‘)’ token
+cuda.cpp:671: error: expected ‘;’ before ‘)’ token
+cuda.cpp:672: error: expected primary-expression before ‘)’ token
+cuda.cpp:672: error: expected ‘;’ before ‘)’ token
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::downloadAll()’:
+cuda.cpp:681: error: ‘my_times’ was not declared in this scope
+cuda.cpp:681: error: expected ‘;’ before ‘starttime’
+cuda.cpp:682: error: expected ‘;’ before ‘endtime’
+cuda.cpp:684: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:686: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:686: error: ‘Cuda_ReverseBinning’ was not declared in this scope
+cuda.cpp:686: error: expected primary-expression before ‘)’ token
+cuda.cpp:686: error: expected ‘;’ before ‘)’ token
+cuda.cpp:688: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:689: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_v’, which is of non-class type ‘int’
+cuda.cpp:690: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_f’, which is of non-class type ‘int’
+cuda.cpp:699: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_q’, which is of non-class type ‘int’
+cuda.cpp:701: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_rmass’, which is of non-class type ‘int’
+cuda.cpp:703: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_radius’, which is of non-class type ‘int’
+cuda.cpp:705: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_omega’, which is of non-class type ‘int’
+cuda.cpp:707: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_torque’, which is of non-class type ‘int’
+cuda.cpp:715: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:717: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp:719: error: ‘endtime’ was not declared in this scope
+cuda.cpp:719: error: ‘my_gettime’ was not declared in this scope
+cuda.cpp:720: error: ‘starttime’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::upload(int)’:
+cuda.cpp:727: error: ‘my_times’ was not declared in this scope
+cuda.cpp:727: error: expected ‘;’ before ‘starttime’
+cuda.cpp:728: error: expected ‘;’ before ‘endtime’
+cuda.cpp:730: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:732: error: ‘starttime’ was not declared in this scope
+cuda.cpp:732: error: ‘my_gettime’ was not declared in this scope
+cuda.cpp:733: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:734: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_v’, which is of non-class type ‘int’
+cuda.cpp:735: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_f’, which is of non-class type ‘int’
+cuda.cpp:744: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:745: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_q’, which is of non-class type ‘int’
+cuda.cpp:748: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_rmass’, which is of non-class type ‘int’
+cuda.cpp:751: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_radius’, which is of non-class type ‘int’
+cuda.cpp:754: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_omega’, which is of non-class type ‘int’
+cuda.cpp:757: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_torque’, which is of non-class type ‘int’
+cuda.cpp:768: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:770: error: request for member ‘upload’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp:772: error: ‘endtime’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::download(int)’:
+cuda.cpp:780: error: ‘my_times’ was not declared in this scope
+cuda.cpp:780: error: expected ‘;’ before ‘starttime’
+cuda.cpp:781: error: expected ‘;’ before ‘endtime’
+cuda.cpp:783: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:785: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:785: error: ‘Cuda_ReverseBinning’ was not declared in this scope
+cuda.cpp:785: error: expected primary-expression before ‘)’ token
+cuda.cpp:785: error: expected ‘;’ before ‘)’ token
+cuda.cpp:787: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:788: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_v’, which is of non-class type ‘int’
+cuda.cpp:789: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_f’, which is of non-class type ‘int’
+cuda.cpp:799: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_q’, which is of non-class type ‘int’
+cuda.cpp:802: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_rmass’, which is of non-class type ‘int’
+cuda.cpp:805: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_radius’, which is of non-class type ‘int’
+cuda.cpp:808: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_omega’, which is of non-class type ‘int’
+cuda.cpp:811: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_torque’, which is of non-class type ‘int’
+cuda.cpp:822: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_eatom’, which is of non-class type ‘int’
+cuda.cpp:824: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_vatom’, which is of non-class type ‘int’
+cuda.cpp:826: error: ‘endtime’ was not declared in this scope
+cuda.cpp:826: error: ‘my_gettime’ was not declared in this scope
+cuda.cpp:827: error: ‘starttime’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::downloadX()’:
+cuda.cpp:833: error: ‘class LAMMPS_NS::Cuda’ has no member named ‘shared_data’
+cuda.cpp:833: error: ‘Cuda_Pair_RevertXType’ was not declared in this scope
+cuda.cpp:834: error: request for member ‘download’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::uploadAllNeighborLists()’:
+cuda.cpp:862: error: ‘class LAMMPS_NS::CudaNeighList’ has no member named ‘sneighlist’
+cuda.cpp:862: error: ‘class LAMMPS_NS::CudaNeighList’ has no member named ‘sneighlist’
+cuda.cpp:862: error: ‘class LAMMPS_NS::CudaNeighList’ has no member named ‘sneighlist’
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::update_xhold(int&, double*)’:
+cuda.cpp:883: error: ‘class LAMMPS_NS::Cuda’ has no member named ‘shared_data’
+cuda.cpp:886: error: ‘X_FLOAT’ was not declared in this scope
+cuda.cpp:886: error: template argument 2 is invalid
+cuda.cpp:886: error: ‘class LAMMPS_NS::Cuda’ has no member named ‘shared_data’
+cuda.cpp:886: error: new initializer expression list treated as compound expression
+cuda.cpp:889: error: ‘class LAMMPS_NS::Cuda’ has no member named ‘shared_data’
+cuda.cpp:890: error: request for member ‘dev_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_xhold’, which is of non-class type ‘int’
+cuda.cpp:890: error: request for member ‘dev_data’ in ‘*((LAMMPS_NS::Cuda*)this)->LAMMPS_NS::Cuda::cu_x’, which is of non-class type ‘int’
+cuda.cpp:890: error: ‘X_FLOAT’ was not declared in this scope
+cuda.cpp:890: error: ‘CudaWrapper_CopyData’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::setTimingsZero()’:
+cuda.cpp:895: error: ‘shared_data’ was not declared in this scope
+cuda.cpp:945: error: ‘CudaWrapper_CheckUploadTime’ was not declared in this scope
+cuda.cpp:946: error: ‘CudaWrapper_CheckDownloadTime’ was not declared in this scope
+cuda.cpp:947: error: ‘CudaWrapper_CheckCPUBufUploadTime’ was not declared in this scope
+cuda.cpp:948: error: ‘CudaWrapper_CheckCPUBufDownloadTime’ was not declared in this scope
+cuda.cpp: In member function ‘void LAMMPS_NS::Cuda::print_timings()’:
+cuda.cpp:959: error: ‘CudaWrapper_CheckUploadTime’ was not declared in this scope
+cuda.cpp:960: error: ‘CudaWrapper_CheckDownloadTime’ was not declared in this scope
+cuda.cpp:961: error: ‘CudaWrapper_CheckCPUBufUploadTime’ was not declared in this scope
+cuda.cpp:962: error: ‘CudaWrapper_CheckCPUBufDownloadTime’ was not declared in this scope
+cuda.cpp:966: error: ‘shared_data’ was not declared in this scope
+In file included from cuda.h:29,
+                 from cuda.cpp:27:
+cuda_data.h: In destructor ‘cCudaData<host_type, dev_type, mode>::~cCudaData() [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)0u]’:
+cuda.cpp:165:   instantiated from here
+cuda_data.h:201: error: ‘CudaWrapper_FreePinnedHostData’ was not declared in this scope
+cuda_data.h:205: error: ‘CudaWrapper_FreeCudaData’ was not declared in this scope
+cuda_data.h: In destructor ‘cCudaData<host_type, dev_type, mode>::~cCudaData() [with host_type = double, dev_type = double, copy_mode mode = (copy_mode)0u]’:
+cuda.cpp:175:   instantiated from here
+cuda_data.h:201: error: ‘CudaWrapper_FreePinnedHostData’ was not declared in this scope
+cuda_data.h:205: error: ‘CudaWrapper_FreeCudaData’ was not declared in this scope
+cuda_data.h: In constructor ‘cCudaData<host_type, dev_type, mode>::cCudaData(host_type*, unsigned int, unsigned int, unsigned int, bool) [with host_type = double, dev_type = double, copy_mode mode = (copy_mode)0u]’:
+cuda.cpp:371:   instantiated from here
+cuda_data.h:142: error: ‘class cCudaData<double, double, (copy_mode)0u>’ has no member named ‘dev_data_array’
+cuda_data.h:179: error: ‘CudaWrapper_AllocCudaData’ was not declared in this scope
+cuda_data.h:186: error: ‘CudaWrapper_AllocPinnedHostData’ was not declared in this scope
+cuda_data.h: In constructor ‘cCudaData<host_type, dev_type, mode>::cCudaData(host_type*, unsigned int, unsigned int, unsigned int, bool) [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)0u]’:
+cuda.cpp:375:   instantiated from here
+cuda_data.h:142: error: ‘class cCudaData<int, int, (copy_mode)0u>’ has no member named ‘dev_data_array’
+cuda_data.h:179: error: ‘CudaWrapper_AllocCudaData’ was not declared in this scope
+cuda_data.h:186: error: ‘CudaWrapper_AllocPinnedHostData’ was not declared in this scope
+cuda_data.h: In destructor ‘cCudaData<host_type, dev_type, mode>::~cCudaData() [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)3u]’:
+cuda.cpp:495:   instantiated from here
+cuda_data.h:201: error: ‘CudaWrapper_FreePinnedHostData’ was not declared in this scope
+cuda_data.h:205: error: ‘CudaWrapper_FreeCudaData’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::upload(bool) [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)0u]’:
+cuda.cpp:644:   instantiated from here
+cuda_data.h:229: error: ‘CudaData_Upload_DoubleDouble’ was not declared in this scope
+cuda_data.h:237: error: ‘CudaData_Upload_DoubleFloat’ was not declared in this scope
+cuda_data.h:248: error: ‘CudaData_Upload_FloatDouble’ was not declared in this scope
+cuda_data.h:256: error: ‘CudaData_Upload_FloatFloat’ was not declared in this scope
+cuda_data.h:267: error: ‘CudaData_Upload_IntInt’ was not declared in this scope
+cuda_data.h:280: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:284: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:287: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:289: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:297: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:301: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:304: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:306: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:314: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:324: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:326: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:333: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:343: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:345: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:351: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:362: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:364: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:371: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:382: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:384: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::upload(bool) [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)3u]’:
+cuda.cpp:659:   instantiated from here
+cuda_data.h:229: error: ‘CudaData_Upload_DoubleDouble’ was not declared in this scope
+cuda_data.h:237: error: ‘CudaData_Upload_DoubleFloat’ was not declared in this scope
+cuda_data.h:248: error: ‘CudaData_Upload_FloatDouble’ was not declared in this scope
+cuda_data.h:256: error: ‘CudaData_Upload_FloatFloat’ was not declared in this scope
+cuda_data.h:267: error: ‘CudaData_Upload_IntInt’ was not declared in this scope
+cuda_data.h:280: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:284: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:287: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:289: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:297: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:301: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:304: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:306: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:314: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:324: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:326: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:333: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:343: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:345: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:351: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:362: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:364: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h:371: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:382: error: ‘CudaWrapper_AddCPUBufUploadTime’ was not declared in this scope
+cuda_data.h:384: error: ‘CudaWrapper_UploadCudaData’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::download(bool) [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)0u]’:
+cuda.cpp:691:   instantiated from here
+cuda_data.h:583: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:586: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:588: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:591: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:600: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:603: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:605: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:608: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:616: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:618: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:628: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:635: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:637: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:647: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:654: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:656: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:667: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:674: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:676: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:687: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h: In member function ‘void cCudaData<host_type, dev_type, mode>::download(bool) [with host_type = int, dev_type = int, copy_mode mode = (copy_mode)3u]’:
+cuda.cpp:709:   instantiated from here
+cuda_data.h:583: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:586: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:588: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:591: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:600: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:603: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:605: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:608: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:616: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:618: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:628: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:635: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:637: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:647: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:654: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:656: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:667: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+cuda_data.h:674: error: ‘CudaWrapper_DownloadCudaData’ was not declared in this scope
+cuda_data.h:676: error: ‘my_gettime’ was not declared in this scope
+cuda_data.h:687: error: ‘CudaWrapper_AddCPUBufDownloadTime’ was not declared in this scope
+make: *** [cuda] Error 1
